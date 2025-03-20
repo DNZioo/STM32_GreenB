@@ -1,0 +1,8 @@
+uart2_rx_data
+moisture_raw
+temperature_raw
+ec_raw
+rxBuffer
+receivedData
+Txnum
+newNumber

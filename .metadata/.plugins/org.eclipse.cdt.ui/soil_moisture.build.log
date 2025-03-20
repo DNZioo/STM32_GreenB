@@ -1,0 +1,38 @@
+16:52:09 **** Incremental Build of configuration Debug for project soil_moisture ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'ProcessSensorData':
+../Core/Src/main.c:91:15: warning: unused variable 'ec' [-Wunused-variable]
+   91 |         float ec          = ec_raw;           // EC in µS/cm
+      |               ^~
+../Core/Src/main.c:90:15: warning: unused variable 'humidity' [-Wunused-variable]
+   90 |         float humidity    = hum_raw / 10.0;   // Convert to %
+      |               ^~~~~~~~
+../Core/Src/main.c:89:15: warning: unused variable 'temperature' [-Wunused-variable]
+   89 |         float temperature = temp_raw / 10.0;  // Convert to Celsius
+      |               ^~~~~~~~~~~
+../Core/Src/main.c:94:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   94 |         printf("Invalid response\n");
+      |         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:94:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   94 |         printf("Invalid response\n");
+      |         ^~~~~~
+../Core/Src/main.c:94:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "soil_moisture.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\AIFARM\STM32_GREENB\soil_moisture\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="soil_moisture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: soil_moisture.elf
+ 
+arm-none-eabi-size   soil_moisture.elf 
+arm-none-eabi-objdump -h -S  soil_moisture.elf  > "soil_moisture.list"
+   text	   data	    bss	    dec	    hex	filename
+  17044	    120	   2056	  19220	   4b14	soil_moisture.elf
+Finished building: default.size.stdout
+ 
+Finished building: soil_moisture.list
+ 
+
+16:52:10 Build Finished. 0 errors, 5 warnings. (took 972ms)
+

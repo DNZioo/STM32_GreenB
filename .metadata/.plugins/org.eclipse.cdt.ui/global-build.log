@@ -1,0 +1,7 @@
+15:17:07 **** Incremental Build of configuration Debug for project stm32f303_pumpcontroller ****
+make -j12 all 
+arm-none-eabi-size   stm32f303_pumpcontroller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14932	    104	   2056	  17092	   42c4	stm32f303_pumpcontroller.elf
+Finished building: default.size.stdout
+ 
