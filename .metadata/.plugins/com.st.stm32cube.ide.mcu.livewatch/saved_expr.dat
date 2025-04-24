@@ -6,3 +6,5 @@ rxBuffer
 receivedData
 Txnum
 newNumber
+rxBuffer
+motorState

@@ -34,3 +34,24 @@ Finished building: default.size.stdout
  
 Finished building: stm32f303_pumpcontroller.list
  
+16:27:20 **** Incremental Build of configuration Debug for project stm32f303_pumpcontroller ****
+make -j12 all 
+arm-none-eabi-size   stm32f303_pumpcontroller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18096	    100	   2044	  20240	   4f10	stm32f303_pumpcontroller.elf
+Finished building: default.size.stdout
+ 
+16:27:37 **** Incremental Build of configuration Debug for project stm32f303_pumpcontroller ****
+make -j12 all 
+arm-none-eabi-size   stm32f303_pumpcontroller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18096	    100	   2044	  20240	   4f10	stm32f303_pumpcontroller.elf
+Finished building: default.size.stdout
+ 
+16:44:12 **** Incremental Build of configuration Debug for project stm32f303_pumpcontroller ****
+make -j12 all 
+arm-none-eabi-size   stm32f303_pumpcontroller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18096	    100	   2044	  20240	   4f10	stm32f303_pumpcontroller.elf
+Finished building: default.size.stdout
+ 
