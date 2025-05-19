@@ -8,3 +8,10 @@ Txnum
 newNumber
 rxBuffer
 motorState
+button
+cmd
+moisture
+rx_cmd
+seconds
+minutes
+hour
