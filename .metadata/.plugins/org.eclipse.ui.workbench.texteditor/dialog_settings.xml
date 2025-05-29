@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Date"/>
+		<item key="selection" value="get "/>
 		<list key="findhistory">
+			<item value="get "/>
+			<item value="while"/>
+			<item value="int"/>
 			<item value="date"/>
 			<item value="uart2_rx_data"/>
 			<item value="uart2_tx_data"/>

@@ -41,15 +41,23 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 //uint8_t button = 0;
 
-uint8_t cmd_off_motor = 0x00;
-uint8_t cmd_on_motor = 0x01;
+#define DS3231_ADDRESS 0x68
+// Declare individual variables for time and date
+uint8_t seconds, minutes, hour, dayofweek, dayofmonth, month, year;
 
+// Commands for operation pump
+uint8_t cmd_off_motor = 0x00;
+uint8_t cmd_on_motor  = 0x01;
+
+//Commands to read modbus sensor
 uint8_t modbus_cmd[8];
 uint8_t modbus_recv[15];
 
@@ -58,7 +66,6 @@ uint16_t moisture_raw    = 0;
 uint16_t temperature_raw = 0;
 uint16_t ec_raw          = 0;
 
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -66,12 +73,16 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+//====================================== Read Modbus Sensor====================================//
+
 void modbus_tx_data() {
     uint8_t modbus_cmd[8] = {0x01, 0x03, 0x00, 0x00, 0x00, 0x03};
     // Calculate CRC for the first 6 bytes
@@ -88,9 +99,52 @@ void modbus_tx_data() {
 		temperature_raw = (modbus_recv[5] << 8) | modbus_recv[6];
 		ec_raw = (modbus_recv[7] << 8) | modbus_recv[8];
         moisture = moisture_raw / 10.0;       // Convert to %
-        float temperature = temperature_raw / 10.0; // Convert to °C
-        float ec = ec_raw;                          // EC in µS/cm
 	}
+}
+
+//========================================== RTC Function======================================//
+
+// Convert normal decimal numbers to binary coded decimal
+uint8_t decToBcd(int val)
+{
+    return (uint8_t)((val / 10 * 16) + (val % 10));
+}
+
+// Convert binary coded decimal to normal decimal numbers
+int bcdToDec(uint8_t val)
+{
+    return (int)((val / 16 * 10) + (val % 16));
+}
+
+// Function to set time
+void Set_Time(uint8_t sec, uint8_t min, uint8_t hr, uint8_t dow, uint8_t dom, uint8_t mon, uint8_t yr)
+{
+    uint8_t set_time[7];
+    set_time[0] = decToBcd(sec);   // Seconds
+    set_time[1] = decToBcd(min);   // Minutes
+    set_time[2] = decToBcd(hr);    // Hours
+    set_time[3] = decToBcd(dow);   // Day of week
+    set_time[4] = decToBcd(dom);   // Day of month
+    set_time[5] = decToBcd(mon);   // Month
+    set_time[6] = decToBcd(yr);    // Year
+
+    HAL_I2C_Mem_Write(&hi2c1, DS3231_ADDRESS << 1, 0x00, 1, set_time, 7, 1000);
+}
+
+// Function to get time
+void Get_Time(void)
+{
+    uint8_t get_time[7];
+    HAL_I2C_Mem_Read(&hi2c1, DS3231_ADDRESS << 1, 0x00, 1, get_time, 7, 1000);
+
+    // Convert BCD values to decimal and store in individual variables
+    seconds = bcdToDec(get_time[0]);
+    minutes = bcdToDec(get_time[1]);
+    hour = bcdToDec(get_time[2]);
+    dayofweek = bcdToDec(get_time[3]);
+    dayofmonth = bcdToDec(get_time[4]);
+    month = bcdToDec(get_time[5]);
+    year = bcdToDec(get_time[6]);
 }
 
 /* USER CODE END 0 */
@@ -125,7 +179,11 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+
+  //Initialize RTC
+  Set_Time(00, 20, 10, 1, 20, 5, 25);
 
   //Turn OFF Valve and cmd to turn off valve
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 0);
@@ -140,25 +198,48 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	 modbus_tx_data();
-	 if (moisture < 40) {
-		 //Turn ON Valve
-		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 1);
-		 HAL_Delay(10);
 
-		 //Send cmd to turn ON Motor
-		 HAL_UART_Transmit(&huart2, &cmd_on_motor, 1, HAL_MAX_DELAY);
+      // Get current time from RTC
+      Get_Time();
+      if (hour == 10 && minutes >= 21 && minutes < 22)
+      {
+          // Perform Modbus communication to read sensor data
+          modbus_tx_data();
 
-	 } else {
+          // Control the motor based on moisture level
+          if (moisture < 40)
+          {
+              // Turn ON Valve
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 1);
+              HAL_Delay(10);
 
-		 //Send cmd to turn OFF Motor
-		 HAL_UART_Transmit(&huart2, &cmd_off_motor, 1, HAL_MAX_DELAY);
-		 HAL_Delay(1000);
+              // Send command to turn ON Motor
+              HAL_UART_Transmit(&huart2, &cmd_on_motor, 1, HAL_MAX_DELAY);
+          }
+          else
+          {
+        	  //Test LED state
+        	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
+              // Send command to turn OFF Motor
+              HAL_UART_Transmit(&huart2, &cmd_off_motor, 1, HAL_MAX_DELAY);
+              HAL_Delay(1000);
 
-		 //Turn OFF Valve
-		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 0);
-	 }
-	  HAL_Delay(1000);
+              // Turn OFF Valve
+              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 0);
+          }
+      }
+      else
+      {
+          // Outside operational hours (6 PM to 6 AM)
+          // Ensure the motor is turned OFF
+          HAL_UART_Transmit(&huart2, &cmd_off_motor, 1, HAL_MAX_DELAY);
+          HAL_Delay(3000);
+          // Turn OFF Valve
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, 0);
+      }
+
+      // Delay before the next iteration
+      HAL_Delay(1000);
 
   }
   /* USER CODE END 3 */
@@ -201,6 +282,40 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**

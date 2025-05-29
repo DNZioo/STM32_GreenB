@@ -1,56 +1,111 @@
-19:47:18 **** Incremental Build of configuration Debug for project stm32f103cb_rtc ****
+10:34:47 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103cb_rtc.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cb_rtc\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cb_rtc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103cb_rtc.elf
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
  
-arm-none-eabi-size   stm32f103cb_rtc.elf 
-arm-none-eabi-objdump -h -S  stm32f103cb_rtc.elf  > "stm32f103cb_rtc.list"
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
    text	   data	    bss	    dec	    hex	filename
-   8356	     20	   1660	  10036	   2734	stm32f103cb_rtc.elf
+  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103cb_rtc.list
+Finished building: stm32f103_nethouse.list
  
-19:47:25 **** Incremental Build of configuration Debug for project stm32f103cb_rtc ****
-make -j12 all 
-arm-none-eabi-size   stm32f103cb_rtc.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8356	     20	   1660	  10036	   2734	stm32f103cb_rtc.elf
-Finished building: default.size.stdout
- 
-19:53:44 **** Incremental Build of configuration Debug for project stm32f103cb_rtc ****
+10:43:57 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103cb_rtc.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cb_rtc\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cb_rtc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103cb_rtc.elf
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
  
-arm-none-eabi-size   stm32f103cb_rtc.elf 
-arm-none-eabi-objdump -h -S  stm32f103cb_rtc.elf  > "stm32f103cb_rtc.list"
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
    text	   data	    bss	    dec	    hex	filename
-   9560	     20	   1660	  11240	   2be8	stm32f103cb_rtc.elf
+  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103cb_rtc.list
+Finished building: stm32f103_nethouse.list
  
-20:14:17 **** Incremental Build of configuration Debug for project stm32f103cb_rtc ****
+10:45:49 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103cb_rtc.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cb_rtc\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cb_rtc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103cb_rtc.elf
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
  
-arm-none-eabi-size   stm32f103cb_rtc.elf 
-arm-none-eabi-objdump -h -S  stm32f103cb_rtc.elf  > "stm32f103cb_rtc.list"
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
    text	   data	    bss	    dec	    hex	filename
-   8356	     20	   1660	  10036	   2734	stm32f103cb_rtc.elf
+  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103cb_rtc.list
+Finished building: stm32f103_nethouse.list
  
-20:18:23 **** Incremental Build of configuration Debug for project stm32f103cb_rtc ****
+11:03:24 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
-arm-none-eabi-size   stm32f103cb_rtc.elf 
+arm-none-eabi-size   stm32f103_nethouse.elf 
    text	   data	    bss	    dec	    hex	filename
-   8356	     20	   1660	  10036	   2734	stm32f103cb_rtc.elf
+  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+11:08:34 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
+ 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103_nethouse.list
+ 
+11:12:29 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
+ 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103_nethouse.list
+ 
+14:49:42 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
+ 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103_nethouse.list
+ 
+14:56:16 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+15:00:45 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+15:04:55 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  

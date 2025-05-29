@@ -1,17 +1,7 @@
-uart2_rx_data
 moisture_raw
 temperature_raw
 ec_raw
-rxBuffer
-receivedData
-Txnum
-newNumber
-rxBuffer
-motorState
-button
-cmd
 moisture
-rx_cmd
 seconds
 minutes
 hour
