@@ -50,10 +50,8 @@ UART_HandleTypeDef huart2;
 
 // Define upper and lower thresholds:
 #define MOISTURE_LOWER_THRESHOLD 50.0
-#define MOISTURE_UPPER_THRESHOLD 70.0
+#define MOISTURE_UPPER_THRESHOLD 60.0
 #define DS3231_ADDRESS 0x68
-
-static bool is_watering = false;  //flag for operation of measure rate
 
 // Commands for operation pump
 uint8_t cmd_off_motor = 0x00;
@@ -206,8 +204,6 @@ int main(void)
 
       // Get current time from RTC
       Get_Time();
-
-      //Check if current time between 6AM and 6PM
       if (hour == 10 && minutes >= 21 && minutes < 22)
       {
           // Perform Modbus communication to read sensor data

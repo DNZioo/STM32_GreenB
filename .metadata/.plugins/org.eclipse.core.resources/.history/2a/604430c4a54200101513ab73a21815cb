@@ -53,8 +53,6 @@ UART_HandleTypeDef huart2;
 #define MOISTURE_UPPER_THRESHOLD 70.0
 #define DS3231_ADDRESS 0x68
 
-static bool is_watering = false;  //flag for operation of measure rate
-
 // Commands for operation pump
 uint8_t cmd_off_motor = 0x00;
 uint8_t cmd_on_motor  = 0x01;
