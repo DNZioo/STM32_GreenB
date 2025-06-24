@@ -1,10 +1,10 @@
-15:04:55 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+09:53:58 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
 arm-none-eabi-size   stm32f103_nethouse.elf 
    text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+  15120	     28	   1844	  16992	   4260	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  
 
-15:04:55 Build Finished. 0 errors, 0 warnings. (took 250ms)
+09:53:59 Build Finished. 0 errors, 0 warnings. (took 252ms)
 

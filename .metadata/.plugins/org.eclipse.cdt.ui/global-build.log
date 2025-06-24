@@ -1,4 +1,145 @@
-10:34:47 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+09:30:25 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+   8128	     20	   1652	   9800	   2648	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103cbt6_soil_sensor.list
+ 
+09:33:46 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8128	     20	   1652	   9800	   2648	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+09:34:37 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+   8128	     20	   1652	   9800	   2648	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103cbt6_soil_sensor.list
+ 
+09:35:05 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+   8128	     20	   1652	   9800	   2648	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103cbt6_soil_sensor.list
+ 
+09:36:43 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8128	     20	   1652	   9800	   2648	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+09:38:39 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'modbus_tx_data':
+../Core/Src/main.c:75:25: error: 'temperature_raw' undeclared (first use in this function)
+   75 |                         temperature_raw = (modbus_recv[5] << 8) | modbus_recv[6];
+      |                         ^~~~~~~~~~~~~~~
+../Core/Src/main.c:75:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:76:25: error: 'ec_raw' undeclared (first use in this function)
+   76 |                         ec_raw = (modbus_recv[7] << 8) | modbus_recv[8];
+      |                         ^~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:38:46 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'modbus_tx_data':
+../Core/Src/main.c:75:25: error: 'temperature_raw' undeclared (first use in this function)
+   75 |                         temperature_raw = (modbus_recv[5] << 8) | modbus_recv[6];
+      |                         ^~~~~~~~~~~~~~~
+../Core/Src/main.c:75:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:76:25: error: 'ec_raw' undeclared (first use in this function)
+   76 |                         ec_raw = (modbus_recv[7] << 8) | modbus_recv[8];
+      |                         ^~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:39:04 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+   9136	     20	   1668	  10824	   2a48	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103cbt6_soil_sensor.list
+ 
+09:40:51 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9136	     20	   1668	  10824	   2a48	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+09:43:17 **** Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:57:13: warning: 'is_watering' defined but not used [-Wunused-variable]
+   57 | static bool is_watering  = false;  //flag for operation of measure rate
+      |             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_nethouse.elf
+ 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+   text	   data	    bss	    dec	    hex	filename
+  12456	     20	   1828	  14304	   37e0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103_nethouse.list
+ 
+09:45:25 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12456	     20	   1828	  14304	   37e0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+09:50:30 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12456	     20	   1828	  14304	   37e0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+09:52:59 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12456	     20	   1828	  14304	   37e0	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+09:53:45 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,105 +148,147 @@ Finished building target: stm32f103_nethouse.elf
 arm-none-eabi-size   stm32f103_nethouse.elf 
 arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
    text	   data	    bss	    dec	    hex	filename
-  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
+  15120	     28	   1844	  16992	   4260	stm32f103_nethouse.elf
 Finished building: default.size.stdout
  
 Finished building: stm32f103_nethouse.list
  
-10:43:57 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+09:53:58 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+make -j12 all 
+arm-none-eabi-size   stm32f103_nethouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15120	     28	   1844	  16992	   4260	stm32f103_nethouse.elf
+Finished building: default.size.stdout
+ 
+10:01:37 **** Build of configuration Debug for project stm32f303_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f303vctx.d" -MT"Core/Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f303vctx.o" "../Core/Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/modbus_crc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/modbus_crc.d" -MT"Core/Src/modbus_crc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/modbus_crc.o"
+arm-none-eabi-gcc "../Core/Src/stm32f3xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_hal_msp.d" -MT"Core/Src/stm32f3xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f3xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_it.d" -MT"Core/Src/stm32f3xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f3xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f3xx.d" -MT"Core/Src/system_stm32f3xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f3xx.o"
+arm-none-eabi-gcc -o "stm32f303_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\AIFARM\STM32_GREENB\stm32f303_soil_sensor\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f303_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f303_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f303_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f303_soil_sensor.elf  > "stm32f303_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+  14796	     20	   1732	  16548	   40a4	stm32f303_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f303_soil_sensor.list
+ 
+10:04:58 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
+ 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
+   text	   data	    bss	    dec	    hex	filename
+   9136	     20	   1668	  10824	   2a48	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103cbt6_soil_sensor.list
+ 
+10:05:39 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103_nethouse.elf
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
  
-arm-none-eabi-size   stm32f103_nethouse.elf 
-arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
    text	   data	    bss	    dec	    hex	filename
-  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
+   9144	     20	   1668	  10832	   2a50	stm32f103cbt6_soil_sensor.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103_nethouse.list
+Finished building: stm32f103cbt6_soil_sensor.list
  
-10:45:49 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+10:05:54 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9144	     20	   1668	  10832	   2a50	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+10:10:07 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
+make -j12 all 
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9144	     20	   1668	  10832	   2a50	stm32f103cbt6_soil_sensor.elf
+Finished building: default.size.stdout
+ 
+10:13:13 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103_nethouse.elf
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
  
-arm-none-eabi-size   stm32f103_nethouse.elf 
-arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
    text	   data	    bss	    dec	    hex	filename
-  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
+   9128	     20	   1668	  10816	   2a40	stm32f103cbt6_soil_sensor.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103_nethouse.list
+Finished building: stm32f103cbt6_soil_sensor.list
  
-11:03:24 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
-make -j12 all 
-arm-none-eabi-size   stm32f103_nethouse.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15004	     24	   1832	  16860	   41dc	stm32f103_nethouse.elf
-Finished building: default.size.stdout
- 
-11:08:34 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+10:14:51 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103_nethouse.elf
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
  
-arm-none-eabi-size   stm32f103_nethouse.elf 
-arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
    text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+   9144	     20	   1668	  10832	   2a50	stm32f103cbt6_soil_sensor.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103_nethouse.list
+Finished building: stm32f103cbt6_soil_sensor.list
  
-11:12:29 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+10:17:46 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103_nethouse.elf
- 
-arm-none-eabi-size   stm32f103_nethouse.elf 
-arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
-   text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
-Finished building: default.size.stdout
- 
-Finished building: stm32f103_nethouse.list
- 
-14:49:42 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
+../Core/Src/main.c: In function 'read_moisture':
+../Core/Src/main.c:75:17: error: 'moisture_raw' undeclared (first use in this function); did you mean 'moisture'?
+   75 |                 moisture_raw = (modbus_recv[3] << 8) | modbus_recv[4];
+      |                 ^~~~~~~~~~~~
+      |                 moisture
+../Core/Src/main.c:75:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:18:41 **** Incremental Build of configuration Debug for project stm32f103cbt6_soil_sensor ****
 make -j12 all 
-arm-none-eabi-gcc -o "stm32f103_nethouse.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103_nethouse\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_nethouse.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32f103_nethouse.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32f103cbt6_soil_sensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\AIFARM\STM32_GREENB\stm32f103cbt6_soil_sensor\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103cbt6_soil_sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103cbt6_soil_sensor.elf
  
-arm-none-eabi-size   stm32f103_nethouse.elf 
-arm-none-eabi-objdump -h -S  stm32f103_nethouse.elf  > "stm32f103_nethouse.list"
+arm-none-eabi-size   stm32f103cbt6_soil_sensor.elf 
+arm-none-eabi-objdump -h -S  stm32f103cbt6_soil_sensor.elf  > "stm32f103cbt6_soil_sensor.list"
    text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
+   9136	     20	   1660	  10816	   2a40	stm32f103cbt6_soil_sensor.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f103_nethouse.list
- 
-14:56:16 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
-make -j12 all 
-arm-none-eabi-size   stm32f103_nethouse.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
-Finished building: default.size.stdout
- 
-15:00:45 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
-make -j12 all 
-arm-none-eabi-size   stm32f103_nethouse.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
-Finished building: default.size.stdout
- 
-15:04:55 **** Incremental Build of configuration Debug for project stm32f103_nethouse ****
-make -j12 all 
-arm-none-eabi-size   stm32f103_nethouse.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15024	     24	   1832	  16880	   41f0	stm32f103_nethouse.elf
-Finished building: default.size.stdout
+Finished building: stm32f103cbt6_soil_sensor.list
  
